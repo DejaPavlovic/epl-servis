@@ -1,0 +1,185 @@
+/*
+Theme Name: Apl servis
+Theme URI: https://apslservis.rs
+Author: Websites Workshop team
+Author URI: https://websitesworkshop.com
+Description: One page WP theme
+Version: 1.0
+*/
+:root{
+    --btnColor: #0070c9;
+    --white: #fff;
+    --black: #000;
+    --gray: #c1c1c1;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 3.5em !important; 
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.py {
+    padding: 100px 0;
+}
+
+/* Nav */
+
+nav .nav-link.active {
+    color: var(--btnColor) !important;
+    border-bottom: 2px solid var(--btnColor);
+}
+
+
+/* header */
+
+
+header .carousel-indicators  [data-bs-target] {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+header .carousel-caption {
+    top: 40%;
+    left: 10%;
+    transform: translateY(-40%);
+    text-align: left;
+}
+
+header form select {
+    background: transparent;
+    border: 1px solid var(--white);
+    width: 300px;
+    padding: 8px 16px;
+}
+
+header form select option {
+    color: var(--black);
+}
+
+/* about */
+
+.about {
+    background: var(--gray);
+}
+.about .img-wrapper{
+    flex: 0 0 40%;
+}
+
+.about .text-wrapper {
+    flex: 0 0 60%;
+}
+
+.about .numbers h4 {
+    margin-bottom: 20px;
+}
+.about .numbers span {
+   background: var(--black);
+   color: var(--white);
+   border-radius: 50%;
+   padding: 2px 7px;
+   margin-right: 10px;
+   font-size: 16px;
+}
+
+/* Much More */
+
+.more{
+    background: var(--black);
+}
+
+.more img {
+    width: 30px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/* Repairs filter */
+
+
+
+.repairs-wrapper .card {
+    border: none;
+    display: none;
+}
+
+.repairs-wrapper .show {
+    display: block;
+}
+
+
+.btns.active{
+    color: var(--btnColor) !important;
+    border: none;
+}
+
+/* Our services */
+
+.services-wrapper .row figure{
+    height: 56px;
+    width: 49px;
+    margin: auto;
+}
+.repairs-wrapper .macMini, 
+.repairs-wrapper .iMac,
+.repairs-wrapper .iPad {
+    display: none;
+}
+.repairs-wrapper .macBook {
+    display: block;
+}
+/* FAQ */
+
+.faq-wrapper {
+    background: #f1f1f1;
+}
+
+.faq-wrapper .accordion-item {
+    box-shadow: 3px 3px 3px var(--gray);
+}
+
+/* Contact */
+
+.contact-wrapper form input, .contact-wrapper form textarea {
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+/* footer */
+footer {
+    background: #fafafa;
+}
+footer .social {
+    font-size: 30px;
+}
+footer .social a {
+    color: var(--btnColor);
+    transition: 0.3s linear;
+}
+footer .social a:hover {
+    color: var(--black);
+}
+footer .links a {
+    display: block;
+}
+footer .textwidget.custom-html-widget {
+    text-align: center;
+}
